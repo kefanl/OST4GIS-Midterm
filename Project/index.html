@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- CSS Imports -->
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.1/litera/bootstrap.min.css" rel="stylesheet" integrity="sha384-+YpxMU1QQywaQtI3dMQAwIcu0vVDuOREjQPC59qblQHg9nTdcrUXMPnanUaldUnY" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="slide1" id="slide1">
+      <div class="sidebar" style="padding:30px;">
+        <h2 style="color:black">Philly's GSI Map</h2><hr>
+        <p>As you can see, Philadelphia has lots of GSI installed in the city. GSI, which refers to Green Stormwater Infrastructure, plays an important role in relieving the pressure of dealing with flood and stormwater. Some infrastructures, such as raingarden and wedland, are spceial ecosystems in the city, which
+         enrich urban ecosystem and are good places for citizens to have fun. Thus I choose the topic of grenn infrastrure to tell municipality where new GSIs could be installed.</p><hr>
+        <button type="button" class="btn btn-danger" onclick="next1()">Next</button>
+      </div>
+      <div class="carto">
+        <iframe width="1520" height="940" frameborder="0" src="https://kefanl.carto.com/builder/7ac6db34-d2f1-43e1-83f3-aa55a747625d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="slide2" id="slide2" style="display:none">
+      <div class="sidebar" style="padding:30px;">
+        <h2 style="color:black">GIS Distribution</h2><hr>
+        <p>From the location map we can see, even though GSIs has distributed all around the city of Philadelphia, the central city area own only few of them. Due to the land use intensity and vertical development, many types of GSI are unable to be constructed, such as retention pool or raingardens. Besides, central city has few parks that have some functions that are similar to GSI such as linear green space that surround Fraklin Square, but are not counted as a GSI.
+         In other areas, GSIs distribute evenly, especially among residential neighborhoods.</p>
+         <img src="image/frank.jpg" alt="Aerial Map of Franklin Square and its surrounding greens" style="width:340px;height:300px;"><hr>
+         <button type="button" class="btn btn-danger" onclick="previous2()">Previous</button>
+        <button type="button" class="btn btn-danger" onclick="next2()">Next</button>
+      </div>
+      <div class="carto">
+        <iframe width="1520" height="940" frameborder="0" src="https://kefanl.carto.com/builder/7ac6db34-d2f1-43e1-83f3-aa55a747625d/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="slide3" id="slide3" style="display:none">
+      <div class="sidebar" style="padding:30px;">
+        <h2 style="color:black">GSI Construction</h2><hr>
+        <p>Even though there is abundant number of GSIs planned in the whole city, many of them are still in construction. Since the idea of GSI haven't get popular until recent years and the city has limited budget to build too many at the same time, only a few of GSIs are completed or are substantially constructed. This means that in most places, we don't know when these GSIs will be realized and function to help the city.</p>
+        <button type="button" class="btn btn-danger" onclick="previous3()">Previous</button>
+        <button type="button" class="btn btn-danger" onclick="next3()">Next</button>
+      </div>
+      <div class="carto">
+        <iframe width="1520" height="940" frameborder="0" src="https://kefanl.carto.com/builder/34c5ff68-f962-46ae-9120-193eafbcab58/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="slide4"  id="slide4" style="display:none">
+      <div class="sidebar" style="padding:30px;">
+        <h2 style="color:black">Philly's Raingardens</h2><hr>
+        <p>Besides, we are also taking a look at two important types of GSI, which are raingarden and infiltration trench. Based on the map, the construction of raingardens in Philadelphia is not as positive as in other cities. The southern part of the city, which is vulnerable to flood according to FEEMA's stuty, is actually lacking raingardens to store ground runoffs caused by storm or flood. Considering the high cost of building new parks, it is appropriate to renovate parks in southern Philadelphia.</p>
+        <button type="button" class="btn btn-danger" onclick="previous4()">Previous</button>
+        <button type="button" class="btn btn-danger" onclick="next4()">Next</button>
+      </div>
+      <div class="carto">
+        <iframe width="1520" height="940" frameborder="0" src="https://kefanl.carto.com/builder/42634af7-7aa0-4c7d-9445-72d50326dee5/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="slide5"  id="slide5" style="display:none">
+      <div class="sidebar" style="padding:30px;">
+        <h2 style="color:black">Philly's Infiltration Trench</h2><hr>
+        <p>The distribution of infiltration trenches also display a really awkward unevenness. Central city area has the highest ratio of land covered by pavement that is impervious, but it has only few infiltration trenches. Even though this area has a denser distribution of sewerage pipes, having infiltration trenches accelerates the output of stormwater, which partly ease the ground runoff in the area.</p><hr>
+        <p>In short, the blueprint of GSI that the municipality of Philadelphia drew is optimistic, but the city really need investment and should take special attention to evenness with different areas.</p>
+        <button type="button" class="btn btn-danger" onclick="previous5()">Previous</button>
+      </div>
+      <div class="carto">
+        <iframe width="1520" height="940" frameborder="0" src="https://kefanl.carto.com/builder/83ecd7da-4d44-44c4-83aa-da747d0a5b34/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+      </div>
+    </div>
+    <!-- Legend -->
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/leaflet.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
